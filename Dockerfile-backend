@@ -1,0 +1,15 @@
+FROM node:20
+
+ADD ./backend /app/backend
+WORKDIR /app/backend/
+COPY backend/.env.template /app/backend/.env
+RUN npm i
+RUN npm install @medusajs/medusa-cli -g
+RUN npm run build
+
+EXPOSE 7001
+EXPOSE 9000
+
+RUN chmod 755 /app/backend/entrypoint.sh
+
+ENTRYPOINT [ "/app/backend/entrypoint.sh" ]

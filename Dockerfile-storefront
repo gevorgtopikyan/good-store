@@ -1,0 +1,14 @@
+FROM node:20
+
+ADD ./storefront /app/storefront
+WORKDIR /app/storefront/
+COPY storefront/.env.template /app/storefront/.env
+RUN npm install pnpm -g
+ENV COREPACK_ENABLE_STRICT=0
+RUN pnpm i
+
+EXPOSE 8000
+
+RUN chmod 755 /app/storefront/entrypoint.sh
+
+ENTRYPOINT [ "/app/storefront/entrypoint.sh" ]

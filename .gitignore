@@ -1,0 +1,75 @@
+# dependencies
+storefront/node_modules
+storefront/.pnp
+storefront/.pnp.js
+
+# testing
+storefront/coverage
+
+# next.js
+storefront/.next/
+storefront/out/
+
+# production
+storefront/build
+
+# misc
+/backend/src/.DS_Store
+/backend/src/admin/.DS_Store
+storefront/.DS_Store
+storefront/*.pem
+
+# debug
+storefront/npm-debug.log*
+storefront/yarn-debug.log*
+storefront/yarn-error.log*
+storefront/.pnpm-debug.log*
+
+# local env files
+storefront/.env
+storefront/.env.local
+storefront/.env.development.local
+storefront/.env.test.local
+storefront/.env.production.local
+
+# vercel
+storefront/.vercel
+
+# typescript
+storefront/*.tsbuildinfo
+storefront/node_modules
+
+storefront/.yarn
+storefront/.swc
+storefront/dump.rdb
+storefront/test-results/
+storefront/playwright-report/
+storefront/blob-report/
+storefront/playwright/.cache/
+storefront/test-results/
+storefront/playwright-report/
+storefront/blob-report/
+storefront/playwright/.cache/
+storefront/playwright/.auth
+
+
+backend/dist
+backend/.env
+.DS_Store
+backend/uploads
+backend/node_modules
+backend/yarn-error.log
+
+.idea
+
+backend/coverage
+
+!backend/src/**
+
+backend/.tsconfig.tsbuildinfo
+
+backend/medusa-db.sql
+backend/build
+backend/.cache
+
+backend/.yarn/*
